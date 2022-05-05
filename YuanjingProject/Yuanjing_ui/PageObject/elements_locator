@@ -1,0 +1,72 @@
+未登录情况下：
+”关于我们“ = css selector，‘div.yuanjing-header3 > div > div:nth-child(2) > div:nth-child(1)’
+“文档” = css selector，‘div.yuanjing-header3 > div > div:nth-child(2) > div:nth-child(2)’
+“登录” = css selector，‘div.yuanjing-header3 > div > div:nth-child(2) > div:nth-child(3)’
+    "登陆页面“欢迎登录元境”"文字的校验：’div.page-section.center.third-login-wrapper > div > h2‘
+“注册” = css selector，‘div.yuanjing-header3 > div > div:nth-child(2) > div:nth-child(4)’
+"产品与服务" = css selector，‘div.yuanjing-header3 > div > div:nth-child(1) > div:nth-child(2)’
+    “产品与服务”内“云游戏开发环境” = ‘div.next-overlay-inner > div > div > div:nth-child(1)’
+    “产品与服务”内“联机SDK” = ‘div.next-overlay-inner > div > div > div:nth-child(2)’
+
+登录：
+"登录账号输入框" = name,'domainAccount'
+"登录密码输入框" = name,'password'
+"登录按钮" = classname,'sso-btn-submit'
+"选择团队进行登录" = css selector,'div.page-tenantselect-section-publicAccount > div > div:nth-child(1)' 括号输入的数字代表当前团队在列表中的索引，可以通过索引值选定需要登录的团队
+"选择团队之后提交按钮" = css selector,'div.tenantselect-btns > button:nth-child(2)'
+"选择团队之后上一步按钮" = css selector,'div.tenantselect-btns > button:nth-child(1)'
+
+注册：
+注册需要手机验证码，暂时先不搞
+
+登录之后：
+"控制台下拉窗” = css selector,'div.yuanjing-header3 > div > div:nth-child(2) > div:nth-child(3)'  同上，改变索引的位置
+    ”控制台内部“：  首先需要点击控制台弹出下拉框
+
+    “微端服务平台”：css selector,'div.next-overlay-inner > div > div:nth-child(1)'
+    （微端服务平台url：https://www.yuanjingio.com/subconsole/micro/）
+
+    “开发者控制台”：css selector,'div.next-overlay-inner > div > div:nth-child(2)'
+    （开发者控制台url：https://www.yuanjingio.com/console）
+
+"关于我们” = css selector,'div.yuanjing-header3 > div > div:nth-child(2) > div:nth-child(2)'
+"文档” = css selector,'div.yuanjing-header3 > div > div:nth-child(2) > div:nth-child(1)'
+（1）=》 关于我们
+（2）=》 文档
+
+"个人头像" = css selector,'div.yuanjing-header3 > div > div:nth-child(2) > div:nth-child(4)'
+    “个人头像”内部：  首先需要点击开个人头像
+    消息：css selector,'div.next-overlay-inner > div:nth-child(2) > div:nth-child(1)'
+    个人中心：css selector,'div.next-overlay-inner > div:nth-child(2) > div:nth-child(2)'
+    团队管理：css selector,'div.next-overlay-inner > div:nth-child(2) > div:nth-child(3)'
+    登出：css selector,'div.next-overlay-inner > div:nth-child(2) > div:nth-child(4)'
+
+控制台内部：
+    控制台创建项目：
+        有项目情况下：css selector,'div.main-wrapper > div > div > div > div > div > div.next-box.Console--searchWrapper--QYmD4IT > button'
+            新建项目名称：css selector,'div.next-dialog-body > form > div:nth-child(1)'
+            上传项目图标：css selector,'div.next-dialog-body > form > div:nth-child(2)'
+            取消按钮：css selector,'div.next-dialog-body > form > div:nth-child(3) > button:nth-child(1)'
+            确认按钮：css selector,'div.next-dialog-body > form > div:nth-child(3) > button:nth-child(2)'
+            不输入项目名称点击确定toast提示的元素属性：css selector,'body > div:nth-child(10) > div > div' 校验 元素属性.txt是否等于：“请检查表单内容”
+
+        无项目情况下：css selector,'div.GameEmpty--tip--YelldI8 > button'
+
+    控制台搜索项目：css selector,'div.main-wrapper > div > div > div > div > div > div.next-box.Console--searchWrapper--QYmD4IT > span'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

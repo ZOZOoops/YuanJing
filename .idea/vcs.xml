@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/Selenium-Framework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/XTestRunner" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boomer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/locust" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/page-object-python-selenium" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/python-ui-auto-test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/python_web_framework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pythonzhipomoshixuexi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/toolchain-webui-test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/uirecorder" vcs="Git" />
+  </component>
+</project>

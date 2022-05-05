@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8254e0fe-5417-485f-b38e-105ec2f0e815" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/Selenium-Framework/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-ui-auto-test/ui-test/resource/base_elements.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium-Framework/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium-Framework/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium-Framework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium-Framework/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium-Framework/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium-Framework/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium-Framework/framework/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium-Framework/framework/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium-Framework/framework/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium-Framework/framework/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium-Framework/pageobjects/baidu_homepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium-Framework/pageobjects/baidu_homepage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium-Framework/testsuites/TestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium-Framework/testsuites/TestRunner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-ui-auto-test/api-test/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-ui-auto-test/ui-test/case/test_baidu_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-ui-auto-test/ui-test/case/test_baidu_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-ui-auto-test/ui-test/case/test_csdn_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-ui-auto-test/ui-test/case/test_csdn_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-ui-auto-test/ui-test/resource/driver/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/python-ui-auto-test/ui-test/resource/driver/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_web_framework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/python_web_framework/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_web_framework/Locators/UserLocators/user_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_web_framework/Locators/UserLocators/user_locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_web_framework/PageObjects/LoginPage/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_web_framework/PageObjects/LoginPage/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uirecorder/uirecorder.log" beforeDir="false" afterPath="$PROJECT_DIR$/uirecorder/uirecorder.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/python-ui-auto-test" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28HHPWVMiWcaJNTbvZlIHLGft2B" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/project/Pycharm_project&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="8254e0fe-5417-485f-b38e-105ec2f0e815" name="变更" comment="" />
+      <created>1650866566674</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650866566674</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

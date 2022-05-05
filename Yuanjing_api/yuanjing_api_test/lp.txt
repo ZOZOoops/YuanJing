@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script src="https://g.alicdn.com/AWSC/AWSC/awsc.js" type="text/javascript">
+
+    <script src="/home/js/jquery-1.11.3.min.js"></script>
+    <script src="/home/js/jquery-adapter.js"></script>
+    <script src="/home/js/common.js?11"></script>
+    <script src="/home/js/alipay-face-login.js"></script>
+</head>
+<body>
+<div id="_umfp" style="width:0px;height:0px;overflow:hidden">
+</div>
+<form method="post" id="form" action="" >
+    <input type="hidden" name="action" value="PreLoginAction" />
+	<input type="hidden" name="event_submit_do_PreLogin" value="false" />
+    <input type="hidden" id="deviceIp" name="deviceIp"  value=""/>
+    <input type="hidden" id="trustEnvToken" name="trustEnvToken"  value=""/>
+    <input type="hidden" id="trustEnvTokenErrorInfo" name="trustEnvTokenErrorInfo"  value=""/>
+    <input type="hidden" name="caLoginKey" value=""/>
+    <input type="hidden" name="umidTokenId" value="Td1d3d138dd0e9a7bb3d9fa1cabea6622" >
+    <input type="hidden" name="disableCert" value="true" >
+    <input type="hidden" name="alipayFaceMetaInfo" id="alipayFaceMetaInfo" value="" >
+    <input type="hidden" name="awscUmidToken"  id="awscUmidToken" value="" >
+    <!-- <input type="hidden" name="domain" value="" > -->
+</form>
+<script type="text/javascript">
+    window.ssoConfig = {
+        '_sso_csrftoken_': 'rNG2UmV9U8w',
+        'intranet': 'false',
+        'ipAddr': '140.205.11.67',
+    }
+
+        try {
+        var metaInfo = getMetaInfo();
+        if (metaInfo != undefined) {
+            $('#alipayFaceMetaInfo').val(JSON.stringify(metaInfo));
+        }
+    } catch (e) {
+    }
+
+
+//通过awsc组件获取umid的token
+    try {
+        AWSC.use("um", function (state, umModule) {
+            if(state === "loaded") {
+                umModule.init({
+                            appName: 'mozi-buc-sso',
+                            serviceLocation: 'cn' // 默认上报到中国，可不填。如需要上报到其他区域，参考下文参数说明。（日常：daily)
+                        }, function (initState, result) {
+                            if(initState === 'success') {
+                                umidToken = result.tn;
+                                document.getElementById("awscUmidToken").value = result.tn;
+                                console.log("umidToken:"+umidToken);
+                                submitForm(300);
+                            }else{
+                                console.warn("awsc_umit_init_failed")
+                            }
+                        }
+                );
+            }
+        });
+    } catch (e) {
+        console.warn("获取UMID失败")
+    }
+
+
+
+try {
+        var getIpComplete = false;
+	function onJSONPCallback(data) {
+		$('#deviceIp').val(data.x_forwarded_for);
+        getIpComplete=true;
+	}
+	GetDeviceIp("https://buc-office.alibaba-inc.com/ip.js");
+
+    	var trustEnvToken = false;
+	var trustEnvTokenErrorInfo = {};
+    function tetCb(data) {
+        if (data && data.token) {
+            $('#trustEnvToken').val(data.token);
+            trustEnvToken=true;
+        } else {
+            trustEnvToken=false;
+            trustEnvTokenErrorInfo = {"readyState": 4, "status": 200, "statusText": "token is blank"};
+        }
+    }
+    var pageLoadTimestamp = new Date().getTime();
+
+    getTrustEnvToken('tetCb', 'buc-sso_001', 1, '21616eba3d944c19b540cdcd499854ee', pageLoadTimestamp, trustEnvTokenErrorInfo);
+
+    var iIntervalId =setInterval(function(){
+        var currentTimestamp = new Date().getTime();
+        if((currentTimestamp-pageLoadTimestamp) > 600 || (getIpComplete && trustEnvToken)){
+            clearInterval(iIntervalId);
+            try {
+                if (!trustEnvTokenErrorInfo) {
+                    trustEnvTokenErrorInfo = {};
+                }
+
+                if (!trustEnvToken) {
+                    if (!trustEnvTokenErrorInfo.statusText) {
+                        trustEnvTokenErrorInfo.statusText = "no response, maybe timeout";
+                    }
+                }
+
+                trustEnvTokenErrorInfo.requestId = '21616eba3d944c19b540cdcd499854ee';
+                trustEnvTokenErrorInfo.time = pageLoadTimestamp;
+                $("#trustEnvTokenErrorInfo").val(JSON.stringify(trustEnvTokenErrorInfo));
+            } catch (e) {
+            }
+            // console.log("errorInfo=" + JSON.stringify(trustEnvTokenErrorInfo))
+            document.getElementById('form').submit();
+        }
+    },50);
+} catch (e) {
+    console.warn("collectIp failed")
+}
+
+submitForm();
+
+function submitForm(timeout){
+
+    if(!timeout){
+        timeout = 1000;
+    }
+    setTimeout(function(){
+        document.getElementById('form').submit();
+    }, timeout);
+}
+
+</script> 
+</body>
+</html>
+<script>
+    (function (w, d, t) {
+        var s = d.createElement(t), m = d.getElementsByTagName(t)[0];
+        s.async = 1;
+        s.src = "https://g.alicdn.com/sd/pointman/js/pt2.js?_=" + Math.floor((new Date()).getTime() / 36e5);
+        m.parentNode.insertBefore(s, m);
+
+        w._pointman_q = w._pointman_q || [];
+        _pointman_q.push(["um", function (umx) {
+            var container = document.getElementById("_umfp");
+            umx.init({
+                timeout: 3000,
+                userId: '',
+                token: 'Td1d3d138dd0e9a7bb3d9fa1cabea6622',
+                userFieldId: 'loginAccountInput',
+                serviceLocation: "cn",
+                appName: 'buc',
+                model: 'L1',
+                containers: {flash: container, dcp: container}
+            });
+        }]);
+    })(window, document, "script");
+</script>
