@@ -52,12 +52,17 @@ d.implicitly_wait(2)
 d.find_element(By.CSS_SELECTOR,'div.next-overlay-inner > div > div:nth-child(2)').click()
 sleep(2)
 # 切换到第二个窗口
-handle = d.window_handles[1]
-d.switch_to_window(handle)
+try:
+    handle = d.window_handles[-1]
+    d.switch_to.window(handle)
+except:
+    raise '切换窗口异常'
 d.implicitly_wait(2)
+sleep(2)
+# 点击新建项目
 d.find_element(By.CSS_SELECTOR,'div.main-wrapper > div > div > div > div > div > div.next-box.Console--searchWrapper--QYmD4IT > button').click()
 
 
 sleep(5)
 # close 是关闭当前浏览器标签页
-d.close()
+d.quit()

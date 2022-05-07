@@ -39,10 +39,12 @@ class Keys(object):
 
     # 输入
     def input(self,value,txt):
-        self.locate(value).clear()
-        self.driver.implicitly_wait(2)
-        self.locate(value).send_keys(txt)
-
+        # self.locate(value).clear()
+        # self.driver.implicitly_wait(2)
+        # self.locate(value).send_keys(txt)
+        self.driver.find_element(*value).clear()
+        sleep(2)
+        self.driver.find_element(*value).send_keys(txt)
     # 退出浏览器
     def quit(self):
         self.driver.quit()
@@ -60,9 +62,9 @@ class Keys(object):
         return WebDriverWait(self.driver,10,0.5).until(lambda el: self.locate(*value),message='元素获取失败')
 
     # 切换窗口句柄
-    def switch_frame(self,index):
+    def switch_window(self,index):
         ele = self.driver.window_handles
-        self.driver.switch_to_window(ele[index])
+        self.driver.switch_to.window(ele[index])
 
     # # 获取当前网页url
     # def get_current_url(self):
@@ -83,9 +85,23 @@ class Keys(object):
         sleep(time_)
 
     # 定义悬停点击操作
-    def suspension(self,value):
-        ActionChains(self.driver).move_to_element(*value).perform()
+    def suspension(self,driver,value,time,outtime):
+        ActionChains(driver).move_to_element(*value).perform()
+        ele = (value)
+        ActionChains(driver,time,outtime)
 
+    # 8、切换frame表单 方法
+    def base_switch_frame(self, name):
+        self.driver.switch_to.frame(name)
+
+    # 9、回到默认目录 方法
+    def back_default_content(self):
+        self.driver.switch_to.default_content()
+
+
+    # 获取当前网页URL
+    def get_current_url(self):
+        return self.driver.current_url
 
 
 #!/usr/bin/env python3
@@ -243,13 +259,6 @@ selenium基类
 #         log.info("[base]: 正在回到主页面")
 #         self.driver.get(page.URL)
 #
-#     # 8、切换frame表单 方法
-#     def base_switch_frame(self, name):
-#         self.driver.switch_to.frame(name)
-#
-#     # 9、回到默认目录 方法
-#     def base_default_content(self):
-#         self.driver.switch_to.default_content()
 #
 #     # 10、切换窗口 方法 调用此方法  title>>>句柄>>>切换窗口
 #     def base_switch_to_window(self, title):

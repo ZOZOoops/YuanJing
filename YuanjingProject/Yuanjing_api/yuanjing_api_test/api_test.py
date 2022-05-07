@@ -93,9 +93,10 @@ if __name__ == '__main__':
     a = Yuanjing()
     a.yuanjing_api()
 
-    now = time.strftime('%Y-%m-%d_%H-%M-%S')
+    now = time.strftime('%Y-%m-%d_%H：%M：%S')
     file_name =  '../report/' + now + '_test_result.html'
     print(os.getcwd())
+
     with open(file_name,'wb') as f:
 
 
@@ -103,7 +104,7 @@ if __name__ == '__main__':
             stream= f,
             title='接口测试报告',
             description='用例执行情况',
-            language='en'
+            language='zh-CN'
         )
         runner.run(discover)
 

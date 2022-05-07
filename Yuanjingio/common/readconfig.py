@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-import configparser
+from configparser import Configparser
 
 from config.conf import cm
 

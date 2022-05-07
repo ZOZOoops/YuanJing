@@ -37,22 +37,40 @@
 "个人头像" = css selector,'div.yuanjing-header3 > div > div:nth-child(2) > div:nth-child(4)'
     “个人头像”内部：  首先需要点击开个人头像
     消息：css selector,'div.next-overlay-inner > div:nth-child(2) > div:nth-child(1)'
+
     个人中心：css selector,'div.next-overlay-inner > div:nth-child(2) > div:nth-child(2)'
+        个人中心-基本信息：css selector,'ul.next-menu-content > li:nth-child(1)'
+        个人中心-安全配置：css selector,'ul.next-menu-content > li:nth-child(2)'
+        个人中心-秘钥管理：css selector,'ul.next-menu-content > li:nth-child(3)'
+
     团队管理：css selector,'div.next-overlay-inner > div:nth-child(2) > div:nth-child(3)'
+        左侧侧边栏-成员管理：css selector,'aside.next-aside-navigation > div > ul > ul > li:nth-child(1)'
+        左侧侧边栏-企业认证：css selector,'aside.next-aside-navigation > div > ul > ul > li:nth-child(2)'
     登出：css selector,'div.next-overlay-inner > div:nth-child(2) > div:nth-child(4)'
 
 控制台内部：
     控制台创建项目：
-        有项目情况下：css selector,'div.main-wrapper > div > div > div > div > div > div.next-box.Console--searchWrapper--QYmD4IT > button'
-            新建项目名称：css selector,'div.next-dialog-body > form > div:nth-child(1)'
+        有项目情况下：
+            新建项目按钮：css selector,'div.main-wrapper > div > div > div > div > div > div > button'
+            新建项目名称输入框：css selector,'div.next-dialog-body > form > div:nth-child(1)' / id,'gameName'
             上传项目图标：css selector,'div.next-dialog-body > form > div:nth-child(2)'
-            取消按钮：css selector,'div.next-dialog-body > form > div:nth-child(3) > button:nth-child(1)'
-            确认按钮：css selector,'div.next-dialog-body > form > div:nth-child(3) > button:nth-child(2)'
+            新建项目弹窗取消按钮：css selector,'div.next-dialog-body > form > div:nth-child(3) > button:nth-child(1)'
+            新建项目弹窗确认按钮：css selector,'div.next-dialog-body > form > div:nth-child(3) > button:nth-child(2)'
             不输入项目名称点击确定toast提示的元素属性：css selector,'body > div:nth-child(10) > div > div' 校验 元素属性.txt是否等于：“请检查表单内容”
+                ele = find_element(BY.CSS,body > div:nth-child(10) > div > div')
+                assert ele.text = '请检查表单内容'
+        无项目情况下：
+            新建项目按钮：css selector,'div.GameEmpty--tip--YelldI8 > button'
 
-        无项目情况下：css selector,'div.GameEmpty--tip--YelldI8 > button'
 
-    控制台搜索项目：css selector,'div.main-wrapper > div > div > div > div > div > div.next-box.Console--searchWrapper--QYmD4IT > span'
+    控制台搜索项目：css selector,'div.main-wrapper > div > div > div > div > div > div > span'
+
+    控制台进入相关项目：
+    选择项目进入到项目内部：css selector,'div.next-loading-wrap > div > div > div:nth-child(1)'  括号内为当前索引，通过索引进入到相关的项目 index=1 为最新创建的项目
+    /**/ 项目卡片需要鼠标进行悬浮操作
+    项目卡片编辑按钮：css selector,'div.next-loading-wrap > div > div > div:nth-child(1) > div > div:nth-child(2) > div:nth-child(2)'
+    创建项目的名称元素校验：css selector,'div.next-loading-wrap > div > div > div:nth-child(index) > div > div > div > div:nth-child(1)')).text
+        index修改为当前的项目位置
 
 
 

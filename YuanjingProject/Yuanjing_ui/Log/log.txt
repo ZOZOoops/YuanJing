@@ -1,19 +1,6 @@
-这是info信息
-这是error信息
-这是警告信息
-hahah
-hahah
-2022-04-27 14:24:32,751 - __main__ - ERROR - 重新进入程序
-2022-04-27 14:24:43,154 - __main__ - ERROR - 重新进入程序
-2022-04-27 15:41:37,577 - mainModule - ERROR - 重新进入程序
-2022-04-27 15:42:38,340 - mainModule - ERROR - 重新进入程序
-2022-04-27 15:42:54,410 - mainModule - ERROR - 重新进入程序
-2022-04-27 15:43:03,243 - mainModule - ERROR - 重新进入程序
-2022-04-27 15:43:05,771 - mainModule - ERROR - 重新进入程序
-asdaasd
-asdaasd
-真是打印的信息
-2022-04-27 16:53:36,946 - ERROR - root - D:\project\Pycharm_project\YuanjingProject\Yuanjing_ui\practice\test002.py
-2022-04-27 16:53:36,946 - ERROR - root - D:\project\Pycharm_project\YuanjingProject\Yuanjing_ui\practice\test002.py
-2022-04-27 16:56:02,046 - root - D:\project\Pycharm_project\YuanjingProject\Yuanjing_ui\practice\test002.py
-2022-04-27 16:56:02,047 - root - D:\project\Pycharm_project\YuanjingProject\Yuanjing_ui\practice\test002.py
+
+2022-05-06 15:30:22,527 - root - D:\project\Pycharm_project\YuanjingProject\Yuanjing_ui\practice\log.py
+2022-05-06 15:30:22,528 - root - D:\project\Pycharm_project\YuanjingProject\Yuanjing_ui\practice\log.py
+2022-05-06 15:31:00,951 - mainModule - ERROR - 重新进入程序
+2022-05-06 15:31:00,953 - root - D:\project\Pycharm_project\YuanjingProject\Yuanjing_ui\practice\log.py
+2022-05-06 15:31:00,953 - root - D:\project\Pycharm_project\YuanjingProject\Yuanjing_ui\practice\log.py

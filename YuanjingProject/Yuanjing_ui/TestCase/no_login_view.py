@@ -4,13 +4,16 @@ import os
 import unittest
 import time
 import XTestRunner
+from XTestRunner import HTMLTestRunner
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from Yuanjing_ui.Base.base_page import Keys
 from configparser import ConfigParser
 
+from Yuanjing_ui.utils.logger import Log, log
 
-class Yuanjing_nologin_view(unittest.TestCase, Keys):
+
+class Yuanjing_nologin_view(unittest.TestCase, Keys,Log):
 
     base_url = 'https://www.yuanjingio.com/'
 
@@ -22,19 +25,25 @@ class Yuanjing_nologin_view(unittest.TestCase, Keys):
         self.quit()
 
     # @unittest.skip
-    def test_001_assert(self):
+    def test_001_portal_assert(self): # 验证首页打开是否正常
         url = self.driver.current_url
         self.assertEqual(url, self.base_url, msg='url断言错误')
+        # 定位到banner的位置
+        banner = self.locate((By.CSS_SELECTOR,'#ice-container > section > section > section > div > div > div > div > div > div > div > div.HomeBanner--wrapper--aqgJQnA > div.HomeBanner--sectionWrapper--tzHfg5x > div:nth-child(1)'))
+        self.assertEqual('面向云游戏时代的',banner.text,msg='首页banner文字校验失败')
+        log.info('打印当前元素的文本:{}'.format(banner.text))
+        print(banner.text)
 
-    def test_002_about(self):
-        # 验证未登录情况下进入到”关于我们“是否正常
+
+    def test_002_about(self):  # 验证未登录情况下进入到”关于我们“是否正常
+
         # 点击”关于我们“按钮
         self.click((By.CSS_SELECTOR,'div.yuanjing-header3 > div > div:nth-child(2) > div:nth-child(1)'))
         self.implicilty_wait(2)
 
         window_handles = self.driver.window_handles
         # 切换到最新的窗口验证url是否正确
-        self.driver.switch_to_window(window_handles[-1])
+        self.driver.switch_to.window(window_handles[-1])
         ele = self.driver.current_url
         self.assertEqual(ele,self.base_url + 'about',msg='断言错误，判断URL失败')
 
@@ -56,6 +65,8 @@ class Yuanjing_nologin_view(unittest.TestCase, Keys):
         ele = self.locate((By.CSS_SELECTOR,'div.page-section.center.third-login-wrapper > div > h2'))
         self.assertEqual(ele.text,'欢迎登录元境',msg='登录校验失败')
 
+
+
     def test_005_register(self):
         self.click((By.CSS_SELECTOR,'div.yuanjing-header3 > div > div:nth-child(2) > div:nth-child(4)'))
         current_url = self.driver.current_url
@@ -64,29 +75,6 @@ class Yuanjing_nologin_view(unittest.TestCase, Keys):
 
 
 if __name__ == '__main__':
-    suite = unittest.defaultTestLoader
-    suite.discover('./','test*.py')
-    dir_path = time.strftime('%Y-%m-%d_%H-%M-%S')
-    timestr = time.strftime('%Y%m%d')
-    # 生成的报告的名字和目录
-    # filename = '../../Yuanjing_ui/test_report/' + timestr + '.html'
-    #
-    # fp = open(filename,'wb',encoding='utf-8')
-    # runner = XTestRunner.HTMLTestRunner(
-    #     stream=fp,
-    #     verbosity=1,
-    #     title='Yuanjing',
-    #     description='description....',
-    #     language='en'
-    # )  # 实例化runner
-    # runner.run(suite)
-    # fp.close()
-    #
-    filename = './report.html'
-    with(open(filename,'wb',encoding='utf-8')) as f:
-
-        runner = XTestRunner.HTMLTestRunner(
-            stream=f,
-            language='en'
-        )
+    suite = unittest.defaultTestLoader.discover('./','test*.py')
+    runner = unittest.TextTestRunner()
     runner.run(suite)

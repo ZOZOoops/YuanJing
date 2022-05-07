@@ -20,7 +20,7 @@
     <input type="hidden" id="trustEnvToken" name="trustEnvToken"  value=""/>
     <input type="hidden" id="trustEnvTokenErrorInfo" name="trustEnvTokenErrorInfo"  value=""/>
     <input type="hidden" name="caLoginKey" value=""/>
-    <input type="hidden" name="umidTokenId" value="T9959b005741f7eedd39fb9521aaeef87" >
+    <input type="hidden" name="umidTokenId" value="Tc63894c4bd496ecfe213339827b8cfc4" >
     <input type="hidden" name="disableCert" value="true" >
     <input type="hidden" name="alipayFaceMetaInfo" id="alipayFaceMetaInfo" value="" >
     <input type="hidden" name="awscUmidToken"  id="awscUmidToken" value="" >
@@ -28,7 +28,7 @@
 </form>
 <script type="text/javascript">
     window.ssoConfig = {
-        '_sso_csrftoken_': 'xsa1q3qkv7w',
+        '_sso_csrftoken_': 'F1Q2KDm3a8w',
         'intranet': 'false',
         'ipAddr': '140.205.11.67',
     }
@@ -89,7 +89,7 @@ try {
     }
     var pageLoadTimestamp = new Date().getTime();
 
-    getTrustEnvToken('tetCb', 'buc-sso_001', 1, '7a9ddef6340f4319b552498a61d18751', pageLoadTimestamp, trustEnvTokenErrorInfo);
+    getTrustEnvToken('tetCb', 'buc-sso_001', 1, '9c27446dfd4a4a44b5063b24c2fcb4fb', pageLoadTimestamp, trustEnvTokenErrorInfo);
 
     var iIntervalId =setInterval(function(){
         var currentTimestamp = new Date().getTime();
@@ -106,7 +106,7 @@ try {
                     }
                 }
 
-                trustEnvTokenErrorInfo.requestId = '7a9ddef6340f4319b552498a61d18751';
+                trustEnvTokenErrorInfo.requestId = '9c27446dfd4a4a44b5063b24c2fcb4fb';
                 trustEnvTokenErrorInfo.time = pageLoadTimestamp;
                 $("#trustEnvTokenErrorInfo").val(JSON.stringify(trustEnvTokenErrorInfo));
             } catch (e) {
@@ -147,7 +147,7 @@ function submitForm(timeout){
             umx.init({
                 timeout: 3000,
                 userId: '',
-                token: 'T9959b005741f7eedd39fb9521aaeef87',
+                token: 'Tc63894c4bd496ecfe213339827b8cfc4',
                 userFieldId: 'loginAccountInput',
                 serviceLocation: "cn",
                 appName: 'buc',
