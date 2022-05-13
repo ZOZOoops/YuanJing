@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Yuanjing_api/practice.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Yuanjing_api/report/del_report.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Yuanjing_ui/Base/a.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Yuanjing_ui/Base/choose_browser.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Yuanjing_ui/practice/browserchoose.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Yuanjing_ui/test_case/f2etest_remote.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Yuanjing_ui/test_case/f2etest_remote1.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Yuanjing_ui/utils/time.py" charset="UTF-8" />
     <file url="PROJECT" charset="GBK" />
   </component>

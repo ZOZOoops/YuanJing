@@ -427,3 +427,285 @@ Read port: 59408
 1652089597050	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
 1652089603232	Marionette	INFO	Stopped listening on port 59408
+1652093171383	geckodriver	INFO	Listening on 127.0.0.1:59550
+1652093174383	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilevY6tC0"
+1652093175439	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilevY6tC0\\search.json.mozlz4", (void 0)))
+1652093178361	Marionette	INFO	Listening on port 59641
+Read port: 59641
+1652093178486	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://mozi-login.alibaba-inc.com"
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/AWSC/et/1.62.1/et_n.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://g.alicdn.com/AWSC/et/1.62.1/et_n.js, line 4: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/??xlly/spl/rp.js,secdev/nsv/1.0.78/ns_e_88_3_n.js?v=1, line 5: WebGL context was lost.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://mozi-login.alibaba-inc.com"
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652093197032	Marionette	INFO	Stopped listening on port 59641
+1652093200057	geckodriver	INFO	Listening on 127.0.0.1:59867
+1652146299803	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileYeUeof"
+1652146305337	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileYeUeof\\search.json.mozlz4", (void 0)))
+1652146313507	Marionette	INFO	Listening on port 52707
+Read port: 52707
+1652146313612	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652146447651	Marionette	INFO	Stopped listening on port 52707
+2146335339	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileLtoJvf"
+1652146336110	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileLtoJvf\\search.json.mozlz4", (void 0)))
+1652146340744	Marionette	INFO	Listening on port 64853
+Read port: 64853
+1652146340852	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652146346220	Marionette	INFO	Stopped listening on port 64853
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+[Parent 35428, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_FailedAsyncOpen) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1652147979887	geckodriver	INFO	Listening on 127.0.0.1:58767
+1652147982887	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilePZd6Z0"
+1652147984252	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilePZd6Z0\\search.json.mozlz4", (void 0)))
+1652147988024	Marionette	INFO	Listening on port 58887
+Read port: 58887
+1652147988117	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://mozi-login.alibaba-inc.com"
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/??xlly/spl/rp.js,secdev/nsv/1.0.78/ns_e_88_3_n.js?v=1, line 5: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/AWSC/et/1.62.1/et_n.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://g.alicdn.com/AWSC/et/1.62.1/et_n.js, line 4: WebGL context was lost.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://mozi-login.alibaba-inc.com"
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652148005998	Marionette	INFO	Stopped listening on port 58887
+1652148008240	geckodriver	INFO	Listening on 127.0.0.1:59081
+1652148011182	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofiledZ4Vtt"
+1652148013013	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofiledZ4Vtt\\search.json.mozlz4", (void 0)))
+1652148017064	Marionette	INFO	Listening on port 59169
+Read port: 59169
+1652148017140	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652148105808	Marionette	INFO	Stopped listening on port 59169
+2148026615	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilenApz7L"
+1652148027249	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilenApz7L\\search.json.mozlz4", (void 0)))
+1652148030851	Marionette	INFO	Listening on port 59358
+Read port: 59358
+1652148030921	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652148038560	Marionette	INFO	Stopped listening on port 59358
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_FailedAsyncOpen) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1652148040283	geckodriver	INFO	Listening on 127.0.0.1:59478
+1652148043260	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileoz0o9L"
+1652148043862	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileoz0o9L\\search.json.mozlz4", (void 0)))
+1652148047999	Marionette	INFO	Listening on port 59588
+Read port: 59588
+1652148048053	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652148053804	Marionette	INFO	Stopped listening on port 59588
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1652148821168	geckodriver	INFO	Listening on 127.0.0.1:59722
+1652148824171	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileDD23zq"
+1652148825151	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileDD23zq\\search.json.mozlz4", (void 0)))
+1652148828447	Marionette	INFO	Listening on port 59822
+Read port: 59822
+1652148828560	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://mozi-login.alibaba-inc.com"
+1652148832848	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/AWSC/et/1.62.1/et_n.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://g.alicdn.com/AWSC/et/1.62.1/et_n.js, line 4: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/??xlly/spl/rp.js,secdev/nsv/1.0.78/ns_e_88_3_n.js?v=1, line 5: WebGL context was lost.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://mozi-login.alibaba-inc.com"
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652148846694	Marionette	INFO	Stopped listening on port 59822
+1652148848487	geckodriver	INFO	Listening on 127.0.0.1:60050
+1652148851484	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilevBgtzb"
+1652148852664	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilevBgtzb\\search.json.mozlz4", (void 0)))
+1652148856894	Marionette	INFO	Listening on port 60163
+Read port: 60163
+1652148857015	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652149001260	Marionette	INFO	Stopped listening on port 60163
+2148866194	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilePPeflK"
+1652148867222	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilePPeflK\\search.json.mozlz4", (void 0)))
+1652148873154	Marionette	INFO	Listening on port 60370
+Read port: 60370
+1652148873235	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652148881233	Marionette	INFO	Stopped listening on port 60370
+1652148883957	geckodriver	INFO	Listening on 127.0.0.1:60510
+1652148886944	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilemMKZvg"
+1652148887611	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilemMKZvg\\search.json.mozlz4", (void 0)))
+1652148892071	Marionette	INFO	Listening on port 60638
+Read port: 60638
+1652148892157	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652148899577	Marionette	INFO	Stopped listening on port 60638
+1652240497490	geckodriver	INFO	Listening on 127.0.0.1:65107
+1652240500513	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilevJ2VLU"
+1652240503920	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilevJ2VLU\\search.json.mozlz4", (void 0)))
+1652240507560	Marionette	INFO	Listening on port 65218
+Read port: 65218
+1652240507620	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.baidu.com"
+1652240519837	Marionette	INFO	Stopped listening on port 65218
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1652254622377	geckodriver	INFO	Listening on 127.0.0.1:59167
+1652254625355	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilenyKyn4"
+1652254626514	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilenyKyn4\\search.json.mozlz4", (void 0)))
+1652254630015	Marionette	INFO	Listening on port 59220
+Read port: 59220
+1652254630094	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://mozi-login.alibaba-inc.com"
+1652254634587	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/??xlly/spl/rp.js,secdev/nsv/1.0.78/ns_e_88_3_n.js?v=1, line 5: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/AWSC/et/1.62.1/et_n.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://g.alicdn.com/AWSC/et/1.62.1/et_n.js, line 4: WebGL context was lost.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://mozi-login.alibaba-inc.com"
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652254647345	Marionette	INFO	Stopped listening on port 59220
+console.error: services.settings: 
+  main/partitioning-exempt-urls Signature failed  TypeError: NetworkError: Network request failed
+1652254649736	geckodriver	INFO	Listening on 127.0.0.1:59330
+1652254652712	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilesObknE"
+1652254653852	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofilesObknE\\search.json.mozlz4", (void 0)))
+1652254656495	Marionette	INFO	Listening on port 59365
+Read port: 59365
+1652254656591	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652254667614	Marionette	INFO	Stopped listening on port 59365
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
+console.error: services.settings: 
+  main/partitioning-exempt-urls Signature failed  TypeError: NetworkError: Network request failed
+1652254669317	geckodriver	INFO	Listening on 127.0.0.1:59491
+1652254672309	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileNYWjOd"
+1652254673544	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileNYWjOd\\search.json.mozlz4", (void 0)))
+1652254676138	Marionette	INFO	Listening on port 59545
+Read port: 59545
+1652254676214	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652254682967	Marionette	INFO	Stopped listening on port 59545
+1652254684762	geckodriver	INFO	Listening on 127.0.0.1:59612
+1652254687750	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileQedTVn"
+1652254688875	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileQedTVn\\search.json.mozlz4", (void 0)))
+1652254692088	Marionette	INFO	Listening on port 59665
+Read port: 59665
+1652254692150	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652254702148	Marionette	INFO	Stopped listening on port 59665
+1652256102471	geckodriver	INFO	Listening on 127.0.0.1:60386
+1652256105467	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileFPMc51"
+1652256106465	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileFPMc51\\search.json.mozlz4", (void 0)))
+1652256108854	Marionette	INFO	Listening on port 60456
+Read port: 60456
+1652256108979	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://mozi-login.alibaba-inc.com"
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/AWSC/et/1.62.1/et_n.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://g.alicdn.com/AWSC/et/1.62.1/et_n.js, line 4: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/??xlly/spl/rp.js,secdev/nsv/1.0.78/ns_e_88_3_n.js?v=1, line 5: WebGL context was lost.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://mozi-login.alibaba-inc.com"
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652256124155	Marionette	INFO	Stopped listening on port 60456
+1652256125896	geckodriver	INFO	Listening on 127.0.0.1:60577
+1652256128884	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileSfQ2OH"
+1652256129808	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileSfQ2OH\\search.json.mozlz4", (void 0)))
+1652256132822	Marionette	INFO	Listening on port 60626
+Read port: 60626
+1652256132861	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652256140083	Marionette	INFO	Stopped listening on port 60626
+1652256141861	geckodriver	INFO	Listening on 127.0.0.1:60712
+1652256144815	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileVN9EOF"
+1652256145731	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileVN9EOF\\search.json.mozlz4", (void 0)))
+1652256148501	Marionette	INFO	Listening on port 60756
+Read port: 60756
+1652256148623	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652256154479	Marionette	INFO	Stopped listening on port 60756
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652256156710	geckodriver	INFO	Listening on 127.0.0.1:60827
+1652256159658	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileVdiUBc"
+1652256160537	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cc\\AppData\\Local\\Temp\\rust_mozprofileVdiUBc\\search.json.mozlz4", (void 0)))
+1652256163409	Marionette	INFO	Listening on port 60890
+Read port: 60890
+1652256163448	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+JavaScript warning: https://g.alicdn.com/secdev/sufei_data/3.9.9/index.js, line 1: WebGL context was lost.
+1652256170735	Marionette	INFO	Stopped listening on port 60890

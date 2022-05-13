@@ -1,6 +1,0 @@
-
-2022-05-06 15:30:22,527 - root - D:\project\Pycharm_project\YuanjingProject\Yuanjing_ui\practice\log.py
-2022-05-06 15:30:22,528 - root - D:\project\Pycharm_project\YuanjingProject\Yuanjing_ui\practice\log.py
-2022-05-06 15:31:00,951 - mainModule - ERROR - 重新进入程序
-2022-05-06 15:31:00,953 - root - D:\project\Pycharm_project\YuanjingProject\Yuanjing_ui\practice\log.py
-2022-05-06 15:31:00,953 - root - D:\project\Pycharm_project\YuanjingProject\Yuanjing_ui\practice\log.py

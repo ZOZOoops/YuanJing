@@ -16,7 +16,8 @@ class Logger(object):
 
         # 创建一个handler，用于写入日志文件
         rq = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
-        log_path = os.path.dirname(os.path.abspath('')) + 'Selenium/logs/'
+        log_path = os.path.dirname(os.path.abspath(__file__))
+        print(log_path)
         log_name = log_path + rq + '.log'
 
         fh = logging.FileHandler(log_name)
@@ -37,3 +38,5 @@ class Logger(object):
 
     def getlog(self):
         return self.logger
+            # 返回的是类中 最后self.logger 可以直接打印信息
+

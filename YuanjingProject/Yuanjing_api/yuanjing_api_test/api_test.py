@@ -2,7 +2,6 @@ import json
 import logging
 import os.path
 import re
-import http.cookiejar as HC
 import time
 import unittest
 
@@ -14,7 +13,7 @@ from XTestRunner import HTMLTestRunner
 
 urllib3.disable_warnings()
 
-class Yuanjing(object):
+class Yuanjing():
 
     def __init__(self):
         self.url = 'https://home.pre-console.gamenow.club'
@@ -37,8 +36,8 @@ class Yuanjing(object):
                 f.write(response.content)
             if not os.path.isdir('./lp.txt'):
                 os.mkdir('./lp/txt')
-        except Exception:
-            print(Exception)
+        except Exception as e:
+            print(e)
 
 
         # 存储BucSso
@@ -85,13 +84,14 @@ class Yuanjing(object):
 
     def login(self):
         pass
-test_dir = './'
-discover = unittest.defaultTestLoader.discover(test_dir,pattern='test*.py')
+
 
 if __name__ == '__main__':
 
     a = Yuanjing()
     a.yuanjing_api()
+    test_dir = './'
+    discover = unittest.defaultTestLoader.discover(test_dir, pattern='test*.py')
 
     now = time.strftime('%Y-%m-%d_%H：%M：%S')
     file_name =  '../report/' + now + '_test_result.html'
@@ -107,4 +107,5 @@ if __name__ == '__main__':
             language='zh-CN'
         )
         runner.run(discover)
+
 

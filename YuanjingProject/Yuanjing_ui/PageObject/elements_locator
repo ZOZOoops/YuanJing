@@ -66,11 +66,23 @@
     控制台搜索项目：css selector,'div.main-wrapper > div > div > div > div > div > div > span'
 
     控制台进入相关项目：
-    选择项目进入到项目内部：css selector,'div.next-loading-wrap > div > div > div:nth-child(1)'  括号内为当前索引，通过索引进入到相关的项目 index=1 为最新创建的项目
     /**/ 项目卡片需要鼠标进行悬浮操作
     项目卡片编辑按钮：css selector,'div.next-loading-wrap > div > div > div:nth-child(1) > div > div:nth-child(2) > div:nth-child(2)'
     创建项目的名称元素校验：css selector,'div.next-loading-wrap > div > div > div:nth-child(index) > div > div > div > div:nth-child(1)')).text
-        index修改为当前的项目位置
+                                                                        index修改为当前的项目位置
+    删除项目的元素校验：css selector,'body > div.next-overlay-wrapper.opened > div'
+        校验ele.text == ‘项目删除成功’
+    选择项目进入到项目内部：css selector,'div.next-loading-wrap > div > div > div:nth-child(1)'  括号内为当前索引，通过索引进入到相关的项目 index=1 为最新创建的项目
+        进入到项目内部之后，左侧侧边栏功能按钮元素位置：
+            左侧侧边栏全览：css selector,'ul.next-menu-content'
+            选择全部项目展开：css selector,'ul.next-menu-content > div'
+            概览：css selector,'ul.next-menu-content > li:nth-child(1)'
+            版本管理：css selector,'ul.next-menu-content > li:nth-child(2)'
+            版本适配：css selector,'ul.next-menu-content > li:nth-child(3) > ul > li:nth-child(1)'
+            资源管理：css selector,'ul.next-menu-content > li:nth-child(3) > ul > li:nth-child(2)'
+            游戏调试：css selector,'ul.next-menu-content > li:nth-child(3) > ul > li:nth-child(3)'
+            云联机服务：css selector,'ul.next-menu-content > li:nth-child(4) > ul'
+            开发者工具：css selector,'ul.next-menu-content > li:nth-child(5) '
 
 
 

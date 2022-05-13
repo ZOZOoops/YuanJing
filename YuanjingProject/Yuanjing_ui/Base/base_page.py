@@ -9,18 +9,41 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException
 
 
-class Keys(object):
+class Base_Keys(object):
 
-    def __init__(self):
-        self.driver = webdriver.Chrome()
+    def __init__(self,name):
+        # self.driver = webdriver.Chrome()
+        self.driver = self.chooseBrowser(name)
 
         # 首先需要初始化一个chrome驱动
+    def chooseBrowser(self,name):
+        # 输入浏览器的名称，生成不同的webdriver对象
+        if name == 'chrome' or name == 'Chrome':
+            driver = webdriver.Chrome(executable_path='../webdrivers/chromedriver.exe')
+            return driver
+
+        if name == 'firefox' or name == 'Firefox' or name == 'ff':
+            driver = webdriver.Chrome(executable_path='../webdrivers/geckodriver.exe')
+            return driver
+
+        if name == 'edge' or name == 'Edge':
+            driver = webdriver.Edge(executable_path='../webdrivers/msedgedriver.exe')
+            return driver
+
+        if name == 'opera' or name == 'Opera':
+            try:
+
+                driver = webdriver.Opera(executable_path='../webdrivers/operadriver.exe')
+                return driver
+            except:
+                raise  Exception('初始化当前浏览器：{}失败'.format(name))
 
 
     #打开url
     def open(self,url):
+
         self.driver.maximize_window()
-        sleep(1)
+        sleep(3)
         try:
             self.driver.get(url)
             self.driver.implicitly_wait(10)
@@ -88,13 +111,13 @@ class Keys(object):
     def suspension(self,driver,value,time,outtime):
         ActionChains(driver).move_to_element(*value).perform()
         ele = (value)
-        ActionChains(driver,time,outtime)
 
-    # 8、切换frame表单 方法
+
+    # 切换frame表单
     def base_switch_frame(self, name):
         self.driver.switch_to.frame(name)
 
-    # 9、回到默认目录 方法
+    # 9、切换iframe框之后，回到默认内容框
     def back_default_content(self):
         self.driver.switch_to.default_content()
 
